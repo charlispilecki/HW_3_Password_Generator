@@ -7,6 +7,9 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  if (password === undefined){
+    password = ""
+  }
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -23,6 +26,9 @@ function generatePassword() {
   }
   else if (lengthOfPass > 128) {
     alert("That password is too long! Passwords must be less than 129 characters.")
+    return
+  } else if (isNaN(lengthOfPass)) {
+    alert("That was not a number!")
     return
   }
 
