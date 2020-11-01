@@ -18,7 +18,7 @@ function writePassword() {
 function generatePassword() {
 
   // get length from user
-  var lengthOfPass = prompt("How long does your password need to be?");
+  var lengthOfPass = prompt("How long does your password need to be? Please enter your desired password length (numerical).");
   lengthOfPass = parseInt(lengthOfPass)
   if (lengthOfPass < 8) {
     alert("That password is too short! Passwords must be at least 8 characters.")
@@ -40,10 +40,10 @@ function generatePassword() {
   var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   var spChar = ["!", "#", "$", "%", "&", "(", '"', "'", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 
-  var useLowerCase = confirm("Would you like your password to include lower case letters?")
-  var useUpperCase = confirm("Would you like your password to include upper case letters?")
-  var useSpChars = confirm("Would you like your password to include special characters?")
-  var useNumbers = confirm("Would you like your password to include numbers?")
+  var useLowerCase = confirm("Would you like your password to include lower case letters? OK means yes and Cancel means no.")
+  var useUpperCase = confirm("Would you like your password to include upper case letters? OK means yes and Cancel means no.")
+  var useSpChars = confirm("Would you like your password to include special characters? OK means yes and Cancel means no.")
+  var useNumbers = confirm("Would you like your password to include numbers? OK means yes and Cancel means no.")
 
   var characters = [];
 
