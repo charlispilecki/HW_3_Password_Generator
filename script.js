@@ -18,7 +18,7 @@ function writePassword() {
 function generatePassword() {
 
   // get length from user
-  var lengthOfPass = prompt("How long does your password need to be? Please enter your desired password length (numerical).");
+  var lengthOfPass = prompt("How long does your password need to be? Please enter your desired password length (numerically).");
   lengthOfPass = parseInt(lengthOfPass)
   if (lengthOfPass < 8) {
     alert("That password is too short! Passwords must be at least 8 characters.")
